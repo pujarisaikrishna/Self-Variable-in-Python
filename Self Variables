@@ -1,0 +1,46 @@
+class Greet:
+    def __init__(self):
+        self.Greet = "good evening"
+        self.name = "krishna"
+
+    def display(self):
+        self.Greet = "good morning"
+        self.name = "jason"
+
+g1_obj = Greet()
+g2_obj = Greet()
+
+g1_obj.display()
+print(g1_obj.Greet)
+print(g1_obj.name)
+
+print("================\n")
+print(g2_obj.Greet)
+print(g2_obj.name)
+
+---------------------------------------------------------------------------------------------------------
+
+class test:
+    def __init__(self):
+        self.test = ("Address of self =",id(self))
+
+obj = test()
+print("Address of class object = ",id(obj))
+
+
+----------------------------------------------------------------------------------------------------------
+
+class Dog:
+    def __init__(self, breed):
+        self.breed = breed
+    def bark(self):
+        print(f'{self.breed} is barking. ')
+
+d = Dog('Labrador')
+d.bark()
+
+
+
+
+
+
